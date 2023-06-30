@@ -1,5 +1,11 @@
 ﻿namespace WhileExample
 {
+    //tema: faceti factorial de n
+    // adica
+    // cititi numarul n de la tastatura
+    // 
+    // 1*2*3*4*5*..*n
+    //
     internal class Program
     {
         static void Main(string[] args)
@@ -7,7 +13,7 @@
             int x = 0;
             Console.WriteLine("Ghici la ce numar m-am gandit");
             int numarGandit = 10;
-            while (x != numarGandit) 
+            while (x != numarGandit)
             {
                 string inputUtilizator = Console.ReadLine();
                 bool parsareaAFostCorecta = int.TryParse(inputUtilizator, out x);
