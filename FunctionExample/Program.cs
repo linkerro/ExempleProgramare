@@ -1,6 +1,6 @@
 ﻿namespace FunctionExample
 {
-    internal class Program
+    internal class Fofoloanca
     {
         /*
          * tema: modificati functia Factorial
@@ -8,22 +8,25 @@
          * cu numere mai mici decat 1 (e.g. 0, -1, -42, etc.)
          */
 
-        static void Main(string[] args)
-        {
-            int fact = Factorial(-100);
-            Console.WriteLine(fact);
-
-        }
-
         static int Factorial(int i)
         {
             if (i == 1)
             {
-                return 1;
+                //return 1;
+            }
+            if (i < 1)
+            {
+                throw new ArgumentException($"paramater {nameof(i)} must be greater or equal to 1.");
             }
 
             int result = i * Factorial(i - 1);
             return result;
+        }
+
+        static void Main()
+        {
+            int variabila_cunascuta_ca_rezultat = Factorial(-100);
+            Console.WriteLine(variabila_cunascuta_ca_rezultat);
         }
     }
 }

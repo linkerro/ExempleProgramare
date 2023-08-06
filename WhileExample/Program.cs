@@ -16,7 +16,8 @@
             while (x != numarGandit)
             {
                 string inputUtilizator = Console.ReadLine();
-                bool parsareaAFostCorecta = int.TryParse(inputUtilizator, out x);
+                bool parsareaAFostCorecta;
+                parsareaAFostCorecta = int.TryParse(inputUtilizator, out x);
                 if (parsareaAFostCorecta)
                 {
                     if (x > numarGandit)
